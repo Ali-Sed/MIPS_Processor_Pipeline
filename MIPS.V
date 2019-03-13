@@ -320,35 +320,47 @@ inout	[35:0]	GPIO_1;					//	GPIO Connection 1
 
 wire [31:0] PC_IF , PC_ID , PC_EXE , PC_MEM , PC_WB;
 wire [31:0] Inst_IF , Inst_ID;
-wire [4:0] Dest_ID  , Dest_EXE , Dest_WB;
+wire [4:0] Dest_ID  , Dest_EXE , Dest_WB , Dest_MEM;
+wire [4:0] WB_DEST;
 
 wire[31:0] PC_IFF , PC_IDD , PC_EXEE , PC_MEMM , PC_WBB;
 wire [31:0] Val1_ID , Val2_ID , Reg2_ID ;
 wire [3:0] EXE_CMD_ID;
 wire MEM_R_EN_ID , MEM_W_EN_ID , WB_EN_ID ;
 
-wire [31:0] Val1_ID , Val2_ID , Reg2_ID ;
-wire [3:0] EXE_CMD_ID;
-wire MEM_R_EN_ID , MEM_W_EN_ID , WB_EN_ID ;
+wire[31:0] Val1_EXE , Val2_EXE;
+
+wire [31:0] Reg2_EXE ;
+
+wire [3:0] EXE_CMD_EXE;
+wire Flush_ID , Flush_EXE , Br_taken_EXE;
+wire Br_type_ID , Br_type_EXE;
+
+
+wire MEM_R_EN_EXE , MEM_W_EN_EXE , WB_EN_EXE ;  
 
  
 
 IF_Stage IF_1 (.clk (CLOCK_50) , .rst(SW[17]) , .PC(PC_IFF) , .Instruction(Inst_IF));
-IF_Stage_reg IF_reg_1 (.clk(KEY[0]), .rst(SW[17]), .PC_in(PC_IFF), .Instruction_in(Inst_IF), .PC(PC_ID), .Instruction(Inst_ID) , 
+IF_Stage_reg IF_reg_1 (.clk(KEY[0]), .rst(SW[17]), .PC_in(PC_IFF), .Instruction_in(Inst_IF), .PC(PC_ID), .Instruction(Inst_ID));
 
+// WB_DATA and WB_Write_EN are not connected
+ID_Stage ID_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_ID), .PC(PC_IDD) , .Instruction(Inst_ID ) , .Dest (Dest_ID) , .Val1 (Val1_ID) , .Val2 (Val2_ID) , .Reg2(Reg2_ID)  , .WB_Dest(WB_DEST)  
+	, .EXE_CMD (EXE_CMD_ID), .MEM_W_EN(MEM_W_EN_ID) , .MEM_R_EN( MEM_R_EN_ID) , .WB_EN(WB_EN_ID) , .IF_flush(Flush_ID)	, .Br_type(Br_type_ID));
 
-ID_Stage ID_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_ID), .PC(PC_IDD) , .Instruction(Inst_ID ) , .Dest (Dest_WB) , .Val1 (Val1_ID) , .Val2 (Val2_ID) , .Reg2(Reg2_ID) 
-	, .EXE_CMD (EXE_CMD_ID), .MEM_W_EN(MEM_W_EN_ID) , .MEM_R_EN( MEM_R_EN_ID) , .WB_EN(WB_EN_ID)	);
-;
-ID_Stage_reg ID_reg_1 (.clk (KEY[0]) , .rst(SW[17]), .PC_in(PC_IDD), .PC(PC_EXE));
+ID_Stage_reg ID_reg_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_IDD), .PC(PC_EXE) , .Flush(Flush_ID)  , .MEM_R_EN_in(MEM_R_EN_ID) , .MEM_W_EN_in(MEM_W_EN_ID) , .WB_EN_in(WB_EN_ID),
+						.EXE_CMD_in(EXE_CMD_ID) , .Dest_in(DEST_ID) , .Reg2_in(Reg2_ID) , .Val1_in(Val1_ID) , .Val2_in(Val2_ID),
+						.Dest(Dest_EXE) , .Val1(Val1_EXE) , .Val2(Val2_EXE) , .Reg2(Reg2_EXE) , .MEM_R_EN(MEM_R_EN_EXE) , 
+						.MEM_W_EN(MEM_W_EN_EXE) , .EXE_CMD(EXE_CMD_EXE) , .WB_EN(WB_EN_EXE), .Br_type(Br_type_EXE) , .Br_type_in (Br_type_ID));
 
-EXE_Stage EXE_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_EXE), .PC(PC_EXEE));
-EXE_Stage_reg EXE_reg_1(.clk (KEY[0]) , .rst(SW[17]), .PC_in(PC_EXEE), .PC(PC_MEM));
+EXE_Stage EXE_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_EXE), .PC(PC_EXEE) );
+EXE_Stage_reg EXE_reg_1(.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_EXEE), .PC(PC_MEM) ,  .Dest_in(Dest_EXE), .Dest(Dest_MEM)  );
 
-MEM_Stage MEM_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_MEM), .PC(PC_MEMM));
-MEM_Stage_reg MEM_reg_1(.clk (KEY[0]) , .rst(SW[17]), .PC_in(PC_MEMM), .PC(PC_WB));
+MEM_Stage MEM_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_MEM), .PC(PC_MEMM) );
+MEM_Stage_reg MEM_reg_1(.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_MEMM), .PC(PC_WB) , .Dest_in(Dest_MEM), .Dest(WB_DEST) );
 
 WB_Stage WB_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_WB), .PC(PC_WBB));
+
 
 
 B2Seven (PC_ID[3:0] , HEX0 );

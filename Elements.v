@@ -57,11 +57,11 @@ endmodule
 module Sign_extend ( In , Out);
 	
 	input [15:0] In;
-	output [31:0] Out;
+	output reg [31:0] Out;
 	integer i;
 	always @ (*)
 	begin 
-		for ( i=16 ; i<32 ; i++ )
+		for ( i=16 ; i<32 ; i = i+1 )
 		begin 
 			Out [i] = In[15];
 			Out [i-16] = In[i-16];
@@ -71,16 +71,18 @@ module Sign_extend ( In , Out);
 endmodule
 
 
-module Control_unit (Opcode , IS_IMM , EXE_CMD , WB_EN , MEM_R , MEM_W);
+module Control_unit (Opcode , IS_IMM , EXE_CMD , WB_EN , MEM_R , MEM_W, BR_type);
 
 	input [5:0] Opcode;
-	output IS_IMM, WB_EN , MEM_R , MEM_W;
-	output [3:0] EXE_CMD;
+	output reg IS_IMM, WB_EN , MEM_R , MEM_W;
+	output reg [1:0] BR_type ;
+	output reg [3:0] EXE_CMD;
 
 	always @ (*)
 	begin 
-		{WB_EN , MEM_R , MEM_W} = 3'b000;
-		IS_IMM = 4'b0000;
+		{WB_EN , MEM_R , MEM_W , IS_IMM} = 4'b0000;
+		BR_type = 2'b0;
+		EXE_CMD = 4'b0000;
 		case (Opcode)
 		0: begin 
 			EXE_CMD = 4'bXXXX; //DC
@@ -161,17 +163,21 @@ module Control_unit (Opcode , IS_IMM , EXE_CMD , WB_EN , MEM_R , MEM_W);
 		40:begin 
 			EXE_CMD = 4'bXXXX;
 			IS_IMM = 1;
+			BR_type =2'b01;
 			end
 		41:begin
 			EXE_CMD = 4'bXXXX;
 			IS_IMM = 1;
+			BR_type = 2'b10;
 		end
 
 		42:begin
 			EXE_CMD = 4'bXXXX;
 			IS_IMM = 1 ;
+			BR_type = 2'b11;
 		end
 		endcase
+	end
 endmodule
 
 

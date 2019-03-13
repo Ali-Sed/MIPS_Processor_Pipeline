@@ -2,7 +2,7 @@ module Register_file ( clk , rst , Src1 , Src2 , Dest , Write_Val , Write_EN , R
 	input clk , rst , Write_EN;
 	input [4:0] Src1 , Src2 , Dest;
 	input [31:0] Write_Val;
-	output reg [31:0] Reg1 , Reg2;
+	output  [31:0] Reg1 , Reg2;
 
 	reg [31:0] Reg_data [0:31];
 
@@ -15,7 +15,7 @@ module Register_file ( clk , rst , Src1 , Src2 , Dest , Write_Val , Write_EN , R
 	begin 
 		if ( rst )
 			begin
-				for ( i=0 ; i < 32 ; i++)
+				for ( i=0 ; i < 32 ; i = i+1)
 					Reg_data [i] <= i;
 			end
 		else 
@@ -27,5 +27,7 @@ module Register_file ( clk , rst , Src1 , Src2 , Dest , Write_Val , Write_EN , R
 			end
 	end
 
+	
+endmodule
 
 
