@@ -1,34 +1,43 @@
 
 
 
-module IF_Stage(clk, rst, PC, Instruction);
+module IF_Stage(clk, rst, Br_taken, Br_Addr, PC, Instruction);
 	input clk , rst; 
+	input Br_taken;
+	input [31:0] Br_Addr;
 	output reg [31:0] PC;
 	output  [31:0] Instruction;
+	
+	reg [31:0] Mux2PC, PCtemp;
 
 	always @(posedge clk) begin
 		if (rst) begin
 			// reset
-			PC = 32'b0;
+			PCtemp <= 32'b0;
 		end
 		else begin
-			PC <= PC + 4;
+			PCtemp <= Mux2PC;
 		end
 	end
-
-	Inst_mem Instruction_mem ( .Address ( PC) , .Inst_mem_out(Instruction));
-
-
-
+	
+	always @(*) begin
+	  PC = PCtemp + 4;
+	  Mux2PC = Br_taken?Br_Addr:PCtemp + 4; 
+	
+	end
+	
+	Inst_mem Instruction_mem ( .Address ( PCtemp) , .Inst_mem_out(Instruction)); 
+  
 endmodule
 
-module IF_Stage_reg(clk, rst, PC_in, Instruction_in, PC, Instruction);
-	input clk , rst ;
+
+module IF_Stage_reg(clk, rst, PC_in, Flush, Instruction_in, PC, Instruction);
+	input clk , rst, Flush;
 	input [31:0] PC_in , Instruction_in ;
 	output reg [31:0] PC , Instruction;
 
 	always @(posedge clk) begin
-		if (rst)
+		if (rst | Flush)
 		begin
 			PC <=32'b0;
 			Instruction <= 32'b0;
@@ -45,7 +54,7 @@ module IF_Stage_reg(clk, rst, PC_in, Instruction_in, PC, Instruction);
 endmodule
 
 module ID_Stage(clk, rst, PC_in, PC , WB_Dest ,WB_Write_Enable , WB_Data, Instruction , Dest , Val1 , Val2 , Reg2 , 
-				EXE_CMD , MEM_R_EN , MEM_W_EN , WB_EN , IF_flush , Br_type);
+				EXE_CMD , MEM_R_EN , MEM_W_EN , WB_EN , Br_type);
 	input clk , rst ; 
 	input [31:0] Instruction;
 	input [31:0] PC_in;
@@ -53,7 +62,6 @@ module ID_Stage(clk, rst, PC_in, PC , WB_Dest ,WB_Write_Enable , WB_Data, Instru
 	input [4:0] WB_Dest;
 	input[31:0] WB_Data;
 
-	output IF_flush;
 	
 
 	output MEM_W_EN , MEM_R_EN , WB_EN;
@@ -75,8 +83,8 @@ module ID_Stage(clk, rst, PC_in, PC , WB_Dest ,WB_Write_Enable , WB_Data, Instru
 	Register_file RF ( .clk(clk) , .rst(rst) , .Src1(Instruction[25:21]) , .Src2(Instruction[20:16]) , .Dest(WB_Dest) , 
 						.Write_Val(WB_Data) , .Write_EN(WB_Write_Enable) , .Reg1 (Val1), .Reg2(Reg2_local) );
 	
-	Control_unit CU (.Opcode (Instruction[31:26]) , .IS_IMM (IS_IMM ) , .WB_EN(WB_EN) , .MEM_R (MEM_R_EN) , .MEM_W(MEM_R_EN), .EXE_CMD (EXE_CMD) , .BR_type(Br_type));
-	assign Val1 = Reg1;
+	Control_unit CU (.Opcode (Instruction[31:26]) , .IS_IMM (IS_IMM ) , .WB_EN(WB_EN) , .MEM_R (MEM_R_EN) , .MEM_W(MEM_W_EN), .EXE_CMD (EXE_CMD) , .BR_type(Br_type));
+	
 	assign Reg2= Reg2_local ;
 
 	assign PC = PC_in;
@@ -110,7 +118,7 @@ module ID_Stage_reg(clk, rst, PC_in, PC , Flush , MEM_R_EN_in , MEM_W_EN_in , WB
 
 
 	always @(posedge clk) begin
-		if (rst)
+		if (rst | Flush)
 		begin
 			
 		
@@ -142,9 +150,9 @@ module ID_Stage_reg(clk, rst, PC_in, PC , Flush , MEM_R_EN_in , MEM_W_EN_in , WB
 	
 endmodule
 
-module EXE_Stage(clk, rst, PC , EXE_CMD , Val1 ,Val2 , Val_src2 , Br_type , ALU_result , Br_Addr , Br_taken , PC_in);
+module EXE_Stage(clk, rst, PC , EXE_CMD , Val1 ,Val2 , Val_src2 , Br_type , ALU_result , Br_Addr , Br_taken);
 	input clk , rst ;
-	input [31:0] PC_in;
+	input [31:0] PC;
 	input [3:0] EXE_CMD;
 	input [31:0] Val1;
 	input [31:0] Val2;
@@ -154,11 +162,15 @@ module EXE_Stage(clk, rst, PC , EXE_CMD , Val1 ,Val2 , Val_src2 , Br_type , ALU_
 	output [31:0] ALU_result;
 	output [31:0] Br_Addr;
 	output Br_taken;
-	output [31:0] PC;
-
-	assign PC = PC_in;
 
 
+	assign Br_Addr = PC + Val2;
+	assign Br_taken = (Br_type == 2'b01 && Val1 == 0 )? 1 :
+	                  (Br_type == 2'b10 && Val1 == Val_src2 )? 1 :
+                    (Br_type == 2'b11 )? 1 : 0;
+
+ ALU(.Val1(Val1), .Val2(Val2), .EXE_CMD(EXE_CMD), .ALU_result(ALU_result));
+ 
 
 endmodule
 
@@ -225,8 +237,13 @@ module MEM_Stage(clk, rst, PC_in, PC , MEM_W_EN_in , MEM_R_EN_in ,
 
 	output [31:0] PC;
 	output [31:0] MEM_read_value;
+	
+	wire [31:0] Address;
 
-	assign PC = PC_in;
+	assign Address =  ALU_result_in - 1024;
+	Data_Memory Memory( .clk(clk) , .ST_val(ST_val) , .MEM_W_EN(MEM_W_EN_in) , .MEM_R_EN(MEM_R_EN_in) , .Address (Address) , .Mem_read_value(MEM_read_value));
+	
+	
 
 endmodule
 
@@ -279,6 +296,7 @@ module WB_Stage(clk, rst, PC_in, PC , WB_EN_in , MEM_R_EN , ALU_result , MEM_rea
 	input WB_EN_in , MEM_R_EN;
 	input [31:0] ALU_result , MEM_read_value;
 	input [4:0] Dest_in;
+	
 	output WB_EN;
 	output [31:0] Write_value;
 	output [4:0] Dest ;
@@ -286,7 +304,9 @@ module WB_Stage(clk, rst, PC_in, PC , WB_EN_in , MEM_R_EN , ALU_result , MEM_rea
 
 	assign PC = PC_in;
 	assign Dest = Dest_in ; 
+	assign WB_EN = WB_EN_in;
+	
+	assign Write_value = (MEM_R_EN)? ALU_result : MEM_read_value;
 
 endmodule
-
 
