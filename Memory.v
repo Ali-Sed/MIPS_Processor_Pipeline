@@ -10,6 +10,12 @@ module Data_Memory ( clk , ST_val , MEM_W_EN , MEM_R_EN , Address , Mem_read_val
 
   reg [31:0] MEM_data [0:63];
 
+/*initial begin 
+  MEM_data[33] = 4;
+end*/
+
+
+
   always @(*) begin
    if(MEM_R_EN)
       Mem_read_value = MEM_data[Address];

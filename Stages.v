@@ -5,26 +5,32 @@ module IF_Stage(clk, rst, Br_taken, Br_Addr, PC, Instruction);
 	input clk , rst; 
 	input Br_taken;
 	input [31:0] Br_Addr;
-	output reg [31:0] PC;
+	output [31:0] PC;
 	output  [31:0] Instruction;
 	
 	reg [31:0] Mux2PC, PCtemp;
 
-	always @(posedge clk) begin
+	always @(posedge clk, posedge rst) begin
 		if (rst) begin
 			// reset
 			PCtemp <= 32'b0;
+			//PC <= 32'b0;
 		end
 		else begin
 			PCtemp <= Mux2PC;
+			//PC <= PC + 4;
 		end
 	end
 	
 	always @(*) begin
-	  PC = PCtemp + 4;
+	  
 	  Mux2PC = Br_taken?Br_Addr:PCtemp + 4; 
+	  //PC = PCtemp + 1;
+	  //Mux2PC = Br_taken?Br_Addr:PCtemp + 1; 
 	
 	end
+	
+	assign PC = PCtemp + 4;
 	
 	Inst_mem Instruction_mem ( .Address ( PCtemp) , .Inst_mem_out(Instruction)); 
   
@@ -71,7 +77,7 @@ module ID_Stage(clk, rst, PC_in, PC , WB_Dest ,WB_Write_Enable , WB_Data, Instru
 	output [31:0] PC;
 	output [1:0] Br_type;
 
-	wire [4:0] Reg1 , Reg2_local;
+	wire [31:0] Reg1 , Reg2_local;
 	wire [31:0] Sign_extend_out ;
 	wire IS_IMM;
 
@@ -163,13 +169,12 @@ module EXE_Stage(clk, rst, PC , EXE_CMD , Val1 ,Val2 , Val_src2 , Br_type , ALU_
 	output [31:0] Br_Addr;
 	output Br_taken;
 
-
-	assign Br_Addr = PC + Val2;
+	assign Br_Addr = PC + (Val2<<2);
 	assign Br_taken = (Br_type == 2'b01 && Val1 == 0 )? 1 :
-	                  (Br_type == 2'b10 && Val1 == Val_src2 )? 1 :
+	                  (Br_type == 2'b10 && Val1 != Val_src2 )? 1 :
                     (Br_type == 2'b11 )? 1 : 0;
 
- ALU(.Val1(Val1), .Val2(Val2), .EXE_CMD(EXE_CMD), .ALU_result(ALU_result));
+ ALU I1(.Val1(Val1), .Val2(Val2), .EXE_CMD(EXE_CMD), .ALU_result(ALU_result));
  
 
 endmodule
@@ -240,7 +245,7 @@ module MEM_Stage(clk, rst, PC_in, PC , MEM_W_EN_in , MEM_R_EN_in ,
 	
 	wire [31:0] Address;
 
-	assign Address =  ALU_result_in - 1024;
+	assign Address =  ALU_result_in + 32;
 	Data_Memory Memory( .clk(clk) , .ST_val(ST_val) , .MEM_W_EN(MEM_W_EN_in) , .MEM_R_EN(MEM_R_EN_in) , .Address (Address) , .Mem_read_value(MEM_read_value));
 	
 	
@@ -306,7 +311,7 @@ module WB_Stage(clk, rst, PC_in, PC , WB_EN_in , MEM_R_EN , ALU_result , MEM_rea
 	assign Dest = Dest_in ; 
 	assign WB_EN = WB_EN_in;
 	
-	assign Write_value = (MEM_R_EN)? ALU_result : MEM_read_value;
+	assign Write_value = (~MEM_R_EN)? ALU_result : MEM_read_value;
 
 endmodule
 

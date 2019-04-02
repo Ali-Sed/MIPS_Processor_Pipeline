@@ -328,27 +328,28 @@ wire [31:0] Val1_ID , Val2_ID , Reg2_ID ;
 wire [3:0] EXE_CMD_ID;
 wire MEM_R_EN_ID , MEM_W_EN_ID , WB_EN_ID ;
 
-wire[31:0] Val1_EXE , Val2_EXE;
+wire[31:0] Val1_EXE , Val2_EXE, Write_value;
 
 wire [31:0] Reg2_EXE, ALU_result, Br_address, ALU_result_MEM, ST_value, MEM_read , ALU_result_WB, MEM_read_WB;
 
 wire [3:0] EXE_CMD_EXE;
 wire Flush_ID , Flush_EXE , Br_taken;
-wire Br_type_ID , Br_type_EXE, WB_EN_WB, MEM_R_EN_WB;
+wire [1:0]Br_type_ID , Br_type_EXE;
+wire WB_EN_WB, MEM_R_EN_WB;
 
 
 wire MEM_R_EN_EXE , MEM_W_EN_EXE , WB_EN_EXE ;  
 
 
 IF_Stage IF_1 (.clk (CLOCK_50) , .rst(SW[17]) , .Br_taken(Br_taken), .Br_Addr(Br_address), .PC(PC_IFF) , .Instruction(Inst_IF));
-IF_Stage_reg IF_reg_1 (.clk(KEY[0]), .rst(SW[17]), .PC_in(PC_IFF), .Flush(Br_taken), .Instruction_in(Inst_IF), .PC(PC_ID), .Instruction(Inst_ID));
+IF_Stage_reg IF_reg_1 (.clk(CLOCK_50), .rst(SW[17]), .PC_in(PC_IFF), .Flush(Br_taken), .Instruction_in(Inst_IF), .PC(PC_ID), .Instruction(Inst_ID));
 
 // WB_DATA and WB_Write_EN are not connected
 ID_Stage ID_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_ID), .PC(PC_IDD) , .Instruction(Inst_ID ) ,.WB_Write_Enable(WB_EN), .WB_Data(Write_value), .Dest (Dest_ID) , .Val1 (Val1_ID) , .Val2 (Val2_ID) , .Reg2(Reg2_ID)  , .WB_Dest(WB_DEST)  
 	, .EXE_CMD (EXE_CMD_ID), .MEM_W_EN(MEM_W_EN_ID) , .MEM_R_EN( MEM_R_EN_ID) , .WB_EN(WB_EN_ID), .Br_type(Br_type_ID));
 
 ID_Stage_reg ID_reg_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_IDD), .PC(PC_EXE) , .Flush(Br_taken)  , .MEM_R_EN_in(MEM_R_EN_ID) , .MEM_W_EN_in(MEM_W_EN_ID) , .WB_EN_in(WB_EN_ID),
-						.EXE_CMD_in(EXE_CMD_ID) , .Dest_in(DEST_ID) , .Reg2_in(Reg2_ID) , .Val1_in(Val1_ID) , .Val2_in(Val2_ID),
+						.EXE_CMD_in(EXE_CMD_ID) , .Dest_in(Dest_ID) , .Reg2_in(Reg2_ID) , .Val1_in(Val1_ID) , .Val2_in(Val2_ID),
 						.Dest(Dest_EXE) , .Val1(Val1_EXE) , .Val2(Val2_EXE) , .Reg2(Reg2_EXE) , .MEM_R_EN(MEM_R_EN_EXE) , 
 						.MEM_W_EN(MEM_W_EN_EXE) , .EXE_CMD(EXE_CMD_EXE) , .WB_EN(WB_EN_EXE), .Br_type(Br_type_EXE) , .Br_type_in (Br_type_ID));
 
@@ -367,10 +368,10 @@ WB_Stage WB_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_WB), .PC(PC_WBB), .WB_E
 
 
 
-B2Seven (PC_ID[3:0] , HEX0 );
-B2Seven (PC_EXE[3:0] , HEX1);
-B2Seven (PC_MEM[3:0] , HEX2 );
-B2Seven (PC_WB[3:0] , HEX3 );
+B2Seven A1(PC_ID[3:0] , HEX0 );
+B2Seven A2(PC_EXE[3:0] , HEX1);
+B2Seven A3(PC_MEM[3:0] , HEX2 );
+B2Seven A4(PC_WB[3:0] , HEX3 );
 // (PC_IF[3:0] , HEX0 );
 
 	
