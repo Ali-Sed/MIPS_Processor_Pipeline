@@ -245,7 +245,7 @@ module MEM_Stage(clk, rst, PC_in, PC , MEM_W_EN_in , MEM_R_EN_in ,
 	
 	wire [31:0] Address;
 
-	assign Address =  ALU_result_in + 32;
+	assign Address =  ALU_result_in - 1024;
 	Data_Memory Memory( .clk(clk) , .ST_val(ST_val) , .MEM_W_EN(MEM_W_EN_in) , .MEM_R_EN(MEM_R_EN_in) , .Address (Address) , .Mem_read_value(MEM_read_value));
 	
 	

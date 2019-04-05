@@ -4,7 +4,9 @@ module  Inst_mem ( Address , Inst_mem_out );
 	input [31:0] Address ;
 	output [31:0] Inst_mem_out;
 
+
 initial begin
+
 Inst_mem_data [0]=32'b0;
 Inst_mem_data [1]=32'b10000000000000010000011000001010;//-- Addi r1 ,r0 ,1546 //r1=1546
 Inst_mem_data [2]=32'b0;// NOP
@@ -113,10 +115,7 @@ Inst_mem_data [104]=32'b10101000000000001111111111111111;//-- JMP -1*/
 Inst_mem_data [105]=32'b0; //NOP
 Inst_mem_data [106]=32'b0; //NOP
 
-
-
 end
-
 	assign Inst_mem_out = Inst_mem_data[Address>>2];
 
 endmodule
