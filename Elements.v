@@ -215,11 +215,11 @@ Inst_mem_data [102]=32'b10010000001010100000000000100000;//-- ld ,r10,r1 ,32 //r
 
 Inst_mem_data [103]=32'b10010000001010110000000000100100;//-- ld ,r11,r1 ,36 //r11=-6184
 
-//Inst_mem_data [104]=32'b10101000000000001111111111111111;//-- JMP -1*/
+Inst_mem_data [104]=32'b10101000000000001111111111111111;//-- JMP -1*/
 
-//Inst_mem_data [105]=32'b0; //NOP
+Inst_mem_data [105]=32'b0; //NOP
 
-//Inst_mem_data [106]=32'b0; //NOP
+Inst_mem_data [106]=32'b0; //NOP
 
 end
 	assign Inst_mem_out = Inst_mem_data[Address>>2];
