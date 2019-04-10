@@ -29,7 +29,7 @@ Inst_mem_data [18]=32'b10000000000000010000010000000000; //--addi r1,r0,1024 //r
 Inst_mem_data [19]=32'b0; //NOP
 Inst_mem_data [20]=32'b0; //NOP
 Inst_mem_data [21]=32'b10010100001000100000000000000000;//-- st r2 ,r1 ,0 //
-Inst_mem_data [22]=32'b0; //NOP
+Inst_mem_data [22]=32'b0; //NOP	
 Inst_mem_data [23]=32'b0; //NOP
 Inst_mem_data [24]=32'b10010000001001010000000000000000;//-- ld r5 ,r1 ,0 //r5=1546
 Inst_mem_data [25]=32'b0; //NOP
@@ -296,7 +296,7 @@ endmodule
 
 module ALU(Val1, Val2, EXE_CMD, ALU_result);
   
-  input [31:0] Val1, Val2;
+  input signed [31:0] Val1, Val2;
   input [3:0] EXE_CMD;
   output reg [31:0]ALU_result;
   

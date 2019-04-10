@@ -1,0 +1,2200 @@
+# Compile of Elements.v was successful.
+# Compile of Memory.v was successful.
+# Compile of MIPS.V was successful.
+# Compile of Register_File.v was successful.
+# Compile of Stages.v was successful.
+# Compile of TB.v was successful.
+# 6 compiles, 0 failed with no errors. 
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.IF_Stage
+# Loading work.Inst_mem
+# Loading work.IF_Stage_reg
+# Loading work.ID_Stage
+# Loading work.Sign_extend
+# Loading work.Mux2to1_32bit
+# Loading work.Mux2to1_5bit
+# Loading work.Register_file
+# Loading work.Control_unit
+# Loading work.ID_Stage_reg
+# Loading work.EXE_Stage
+# Loading work.ALU
+# Loading work.EXE_Stage_reg
+# Loading work.MEM_Stage
+# Loading work.Data_Memory
+# Loading work.MEM_Stage_reg
+# Loading work.WB_Stage
+# Loading work.B2Seven
+# ** Warning: (vsim-3017) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Too few port connections. Expected 97, found 2.
+# 
+#         Region: /TB/T1
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'CLOCK_27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'EXT_CLOCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'KEY'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX4'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX5'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX6'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX7'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDG'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_LDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_UDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_RAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CKE'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_UB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_LB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_FSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_LSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK0_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK1_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_ON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_BLON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RW'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_EN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDI'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDO'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_DAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_BLANK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_SYNC'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_R'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_G'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_B'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CMD'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_INT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_BCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_XCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_RESET'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_CLK27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_1'.
+# 
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(359): [PCDPC] - Port size (32 or 32) does not match connection size (5) for port 'Dest_in'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(182).
+# 
+#         Region: /TB/T1/EXE_reg_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(366): [PCDPC] - Port size (5 or 5) does not match connection size (1) for port 'Dest'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(298).
+# 
+#         Region: /TB/T1/WB_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(371): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(372): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A2
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(373): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A3
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(374): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A4
+add wave -position end  sim:/TB/T1/WB_1/PC
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of Elements.v was successful.
+# Compile of Memory.v was successful.
+# Compile of MIPS.V was successful.
+# Compile of Register_File.v was successful.
+# Compile of Elements.v was successful with warnings.
+# Compile of Memory.v was successful.
+# Compile of MIPS.V was successful.
+# Compile of Register_File.v was successful.
+# Compile of Stages.v was successful.
+# Compile of TB.v was successful.
+# 6 compiles, 0 failed with no errors. 
+# Compile of Stages.v was successful.
+# Compile of TB.v was successful.
+# 6 compiles, 0 failed with no errors. 
+restart
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.IF_Stage
+# Loading work.Inst_mem
+# Loading work.IF_Stage_reg
+# Loading work.ID_Stage
+# Loading work.Sign_extend
+# Loading work.Mux2to1_32bit
+# Loading work.Mux2to1_5bit
+# Loading work.Register_file
+# Loading work.Control_unit
+# Loading work.ID_Stage_reg
+# Loading work.EXE_Stage
+# Loading work.ALU
+# Loading work.EXE_Stage_reg
+# Loading work.MEM_Stage
+# Loading work.Data_Memory
+# Loading work.MEM_Stage_reg
+# Loading work.WB_Stage
+# Loading work.B2Seven
+# ** Warning: (vsim-3017) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Too few port connections. Expected 97, found 2.
+# 
+#         Region: /TB/T1
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'CLOCK_27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'EXT_CLOCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'KEY'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX4'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX5'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX6'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX7'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDG'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_LDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_UDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_RAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CKE'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_UB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_LB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_FSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_LSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK0_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK1_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_ON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_BLON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RW'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_EN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDI'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDO'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_DAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_BLANK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_SYNC'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_R'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_G'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_B'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CMD'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_INT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_BCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_XCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_RESET'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_CLK27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_1'.
+# 
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(359): [PCDPC] - Port size (32 or 32) does not match connection size (5) for port 'Dest_in'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(182).
+# 
+#         Region: /TB/T1/EXE_reg_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(366): [PCDPC] - Port size (5 or 5) does not match connection size (1) for port 'Dest'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(298).
+# 
+#         Region: /TB/T1/WB_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(371): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(372): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A2
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(373): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A3
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(374): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A4
+run
+run
+run
+run
+run
+run
+# Compile of Elements.v was successful.
+# Compile of Memory.v was successful.
+# Compile of MIPS.V was successful.
+# Compile of Register_File.v was successful.
+# Compile of Stages.v was successful.
+# Compile of TB.v was successful.
+# 6 compiles, 0 failed with no errors. 
+restart
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.IF_Stage
+# Loading work.Inst_mem
+# Loading work.IF_Stage_reg
+# Loading work.ID_Stage
+# Loading work.Sign_extend
+# Loading work.Mux2to1_32bit
+# Loading work.Mux2to1_5bit
+# Loading work.Register_file
+# Loading work.Control_unit
+# Loading work.ID_Stage_reg
+# Loading work.EXE_Stage
+# Loading work.ALU
+# Loading work.EXE_Stage_reg
+# Loading work.MEM_Stage
+# Loading work.Data_Memory
+# Loading work.MEM_Stage_reg
+# Loading work.WB_Stage
+# Loading work.B2Seven
+# ** Warning: (vsim-3017) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Too few port connections. Expected 97, found 2.
+# 
+#         Region: /TB/T1
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'CLOCK_27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'EXT_CLOCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'KEY'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX4'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX5'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX6'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX7'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDG'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_LDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_UDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_RAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CKE'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_UB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_LB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_FSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_LSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK0_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK1_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_ON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_BLON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RW'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_EN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDI'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDO'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_DAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_BLANK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_SYNC'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_R'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_G'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_B'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CMD'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_INT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_BCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_XCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_RESET'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_CLK27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_1'.
+# 
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(359): [PCDPC] - Port size (32 or 32) does not match connection size (5) for port 'Dest_in'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(182).
+# 
+#         Region: /TB/T1/EXE_reg_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(366): [PCDPC] - Port size (5 or 5) does not match connection size (1) for port 'Dest'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(298).
+# 
+#         Region: /TB/T1/WB_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(371): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(372): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A2
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(373): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A3
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(374): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A4
+run -all
+# Compile of Elements.v was successful.
+# Compile of Memory.v was successful.
+# Compile of MIPS.V was successful.
+# Compile of Register_File.v was successful.
+# Compile of Stages.v was successful.
+# Compile of TB.v failed with 1 errors.
+# 6 compiles, 1 failed with 1 error. 
+# Compile of Elements.v was successful.
+# Compile of Memory.v was successful.
+# Compile of MIPS.V was successful.
+# Compile of Register_File.v was successful.
+# Compile of Stages.v was successful.
+# Compile of TB.v failed with 1 errors.
+# 6 compiles, 1 failed with 1 error. 
+# Load canceled
+# Compile of Elements.v was successful.
+# Compile of Memory.v was successful.
+# Compile of MIPS.V was successful.
+# Compile of Register_File.v was successful.
+# Compile of Stages.v was successful.
+# Compile of TB.v was successful.
+# 6 compiles, 0 failed with no errors. 
+restart
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.IF_Stage
+# Loading work.Inst_mem
+# Loading work.IF_Stage_reg
+# Loading work.ID_Stage
+# Loading work.Sign_extend
+# Loading work.Mux2to1_32bit
+# Loading work.Mux2to1_5bit
+# Loading work.Register_file
+# Loading work.Control_unit
+# Loading work.ID_Stage_reg
+# Loading work.EXE_Stage
+# Loading work.ALU
+# Loading work.EXE_Stage_reg
+# Loading work.MEM_Stage
+# Loading work.Data_Memory
+# Loading work.MEM_Stage_reg
+# Loading work.WB_Stage
+# Loading work.B2Seven
+# ** Warning: (vsim-3017) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Too few port connections. Expected 97, found 2.
+# 
+#         Region: /TB/T1
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'CLOCK_27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'EXT_CLOCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'KEY'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX4'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX5'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX6'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX7'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDG'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_LDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_UDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_RAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CKE'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_UB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_LB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_FSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_LSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK0_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK1_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_ON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_BLON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RW'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_EN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDI'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDO'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_DAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_BLANK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_SYNC'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_R'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_G'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_B'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CMD'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_INT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_BCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_XCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_RESET'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_CLK27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_1'.
+# 
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(359): [PCDPC] - Port size (32 or 32) does not match connection size (5) for port 'Dest_in'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(182).
+# 
+#         Region: /TB/T1/EXE_reg_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(366): [PCDPC] - Port size (5 or 5) does not match connection size (1) for port 'Dest'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(298).
+# 
+#         Region: /TB/T1/WB_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(371): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(372): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A2
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(373): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A3
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(374): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A4
+run -all
+# Break in Module TB at C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v line 22
+add wave -position end  sim:/TB/T1/IF_1/PC
+add wave -position end  sim:/TB/T1/IF_1/PCtemp
+# Compile of Elements.v was successful.
+# Compile of Memory.v was successful.
+# Compile of MIPS.V was successful.
+# Compile of Register_File.v was successful.
+# Compile of Stages.v was successful.
+# Compile of TB.v was successful.
+# 6 compiles, 0 failed with no errors. 
+restart
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.IF_Stage
+# Loading work.Inst_mem
+# Loading work.IF_Stage_reg
+# Loading work.ID_Stage
+# Loading work.Sign_extend
+# Loading work.Mux2to1_32bit
+# Loading work.Mux2to1_5bit
+# Loading work.Register_file
+# Loading work.Control_unit
+# Loading work.ID_Stage_reg
+# Loading work.EXE_Stage
+# Loading work.ALU
+# Loading work.EXE_Stage_reg
+# Loading work.MEM_Stage
+# Loading work.Data_Memory
+# Loading work.MEM_Stage_reg
+# Loading work.WB_Stage
+# Loading work.B2Seven
+# ** Warning: (vsim-3017) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Too few port connections. Expected 97, found 2.
+# 
+#         Region: /TB/T1
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'CLOCK_27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'EXT_CLOCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'KEY'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX4'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX5'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX6'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX7'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDG'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_LDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_UDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_RAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CKE'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_UB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_LB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_FSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_LSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK0_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK1_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_ON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_BLON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RW'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_EN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDI'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDO'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_DAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_BLANK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_SYNC'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_R'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_G'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_B'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CMD'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_INT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_BCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_XCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_RESET'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_CLK27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_1'.
+# 
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(359): [PCDPC] - Port size (32 or 32) does not match connection size (5) for port 'Dest_in'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(182).
+# 
+#         Region: /TB/T1/EXE_reg_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(366): [PCDPC] - Port size (5 or 5) does not match connection size (1) for port 'Dest'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(298).
+# 
+#         Region: /TB/T1/WB_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(371): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(372): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A2
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(373): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A3
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(374): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A4
+run -all
+# Break in Module TB at C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v line 22
+# Compile of Elements.v was successful.
+# Compile of Memory.v was successful.
+# Compile of MIPS.V was successful.
+# Compile of Register_File.v was successful.
+# Compile of Stages.v was successful.
+# Compile of TB.v was successful.
+# 6 compiles, 0 failed with no errors. 
+restart
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.IF_Stage
+# Loading work.Inst_mem
+# Loading work.IF_Stage_reg
+# Loading work.ID_Stage
+# Loading work.Sign_extend
+# Loading work.Mux2to1_32bit
+# Loading work.Mux2to1_5bit
+# Loading work.Register_file
+# Loading work.Control_unit
+# Loading work.ID_Stage_reg
+# Loading work.EXE_Stage
+# Loading work.ALU
+# Loading work.EXE_Stage_reg
+# Loading work.MEM_Stage
+# Loading work.Data_Memory
+# Loading work.MEM_Stage_reg
+# Loading work.WB_Stage
+# Loading work.B2Seven
+# ** Warning: (vsim-3017) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Too few port connections. Expected 97, found 2.
+# 
+#         Region: /TB/T1
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'CLOCK_27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'EXT_CLOCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'KEY'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX4'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX5'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX6'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX7'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDG'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_LDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_UDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_RAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CKE'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_UB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_LB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_FSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_LSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK0_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK1_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_ON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_BLON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RW'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_EN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDI'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDO'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_DAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_BLANK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_SYNC'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_R'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_G'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_B'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CMD'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_INT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_BCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_XCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_RESET'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_CLK27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_1'.
+# 
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(359): [PCDPC] - Port size (32 or 32) does not match connection size (5) for port 'Dest_in'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(182).
+# 
+#         Region: /TB/T1/EXE_reg_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(366): [PCDPC] - Port size (5 or 5) does not match connection size (1) for port 'Dest'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(298).
+# 
+#         Region: /TB/T1/WB_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(371): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(372): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A2
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(373): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A3
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(374): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A4
+run -all
+# Break in Module TB at C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v line 22
+restart
+# ** Warning: (vsim-3017) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Too few port connections. Expected 97, found 2.
+# 
+#         Region: /TB/T1
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'CLOCK_27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'EXT_CLOCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'KEY'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX4'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX5'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX6'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX7'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDG'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_LDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_UDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_RAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CKE'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_UB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_LB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_FSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_LSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK0_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK1_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_ON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_BLON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RW'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_EN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDI'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDO'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_DAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_BLANK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_SYNC'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_R'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_G'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_B'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CMD'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_INT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_BCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_XCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_RESET'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_CLK27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_1'.
+# 
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(359): [PCDPC] - Port size (32 or 32) does not match connection size (5) for port 'Dest_in'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(182).
+# 
+#         Region: /TB/T1/EXE_reg_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(366): [PCDPC] - Port size (5 or 5) does not match connection size (1) for port 'Dest'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(298).
+# 
+#         Region: /TB/T1/WB_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(371): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(372): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A2
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(373): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A3
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(374): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A4
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+# Break in Module TB at C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v line 22
+restart
+# ** Warning: (vsim-3017) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Too few port connections. Expected 97, found 2.
+# 
+#         Region: /TB/T1
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'CLOCK_27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'EXT_CLOCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'KEY'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX4'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX5'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX6'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX7'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDG'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_LDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_UDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_RAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CKE'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_UB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_LB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_FSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_LSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK0_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK1_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_ON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_BLON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RW'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_EN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDI'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDO'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_DAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_BLANK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_SYNC'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_R'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_G'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_B'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CMD'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_INT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_BCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_XCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_RESET'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_CLK27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_1'.
+# 
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(359): [PCDPC] - Port size (32 or 32) does not match connection size (5) for port 'Dest_in'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(182).
+# 
+#         Region: /TB/T1/EXE_reg_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(366): [PCDPC] - Port size (5 or 5) does not match connection size (1) for port 'Dest'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(298).
+# 
+#         Region: /TB/T1/WB_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(371): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(372): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A2
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(373): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A3
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(374): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A4
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Warning: (vsim-3017) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Too few port connections. Expected 97, found 2.
+# 
+#         Region: /TB/T1
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'CLOCK_27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'EXT_CLOCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'KEY'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX4'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX5'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX6'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'HEX7'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDG'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LEDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_LDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_UDQM'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_RAS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_BA_1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'DRAM_CKE'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'FL_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_DQ'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_UB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_LB_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_WE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_CE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'SRAM_OE_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_ADDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_FSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_LSPEED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_INT1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DREQ1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK0_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'OTG_DACK1_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_ON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_BLON'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RW'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_EN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_RS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'LCD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDI'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TCS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TDO'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'I2C_SCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_DAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'PS2_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_BLANK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_SYNC'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_R'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_G'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'VGA_B'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CMD'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CS_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_WR_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RD_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_RST_N'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_INT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'ENET_CLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_ADCDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACLRCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_DACDAT'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_BCLK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'AUD_XCK'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_DATA'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_HS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_VS'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_RESET'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'TD_CLK27'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/TB.v(8): [TFMPC] - Missing connection for port 'GPIO_1'.
+# 
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(359): [PCDPC] - Port size (32 or 32) does not match connection size (5) for port 'Dest_in'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(182).
+# 
+#         Region: /TB/T1/EXE_reg_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(366): [PCDPC] - Port size (5 or 5) does not match connection size (1) for port 'Dest'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/Stages.v(298).
+# 
+#         Region: /TB/T1/WB_1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(371): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A1
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(372): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A2
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(373): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A3
+# ** Warning: (vsim-3015) C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(374): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'Hex'. The port definition is at: C:/Users/alised/Desktop/Bachelor Thesis/Ali/8th/Arch lab/MIPS/Mips_Processor_Pipline/MIPS.V(50).
+# 
+#         Region: /TB/T1/A4
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
