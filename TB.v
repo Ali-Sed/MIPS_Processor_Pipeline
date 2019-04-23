@@ -16,10 +16,12 @@ begin
  
  initial begin
    SW[17] =0;
+   SW[3] = 0;
    #10;
    SW[17] =  1;
    #100;
    SW[17] = 0;
+
    
  end
 
