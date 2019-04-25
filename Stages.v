@@ -16,7 +16,7 @@ module IF_Stage(clk, rst, Br_taken, Br_Addr, PC, Instruction , Freeze);
 			PCtemp <= 32'b0;
 			//PC <= 32'b0;
 		end
-		else if (Freeze)
+		else if (Freeze == 1'b1)
 			PCtemp <= PCtemp;
 		else begin
 			PCtemp <= Mux2PC;
@@ -111,7 +111,7 @@ module ID_Stage_reg(clk, rst, PC_in, PC , Flush , MEM_R_EN_in , MEM_W_EN_in , WB
 						EXE_CMD_in , Dest_in , Reg2_in , Val1_in , Val2_in,
 						Dest , Val1 , Val2 , Reg2 , MEM_R_EN , 
 						MEM_W_EN , EXE_CMD , WB_EN , Br_type_in , Br_type,
-						Src1_ID, Src2_ID, Src1_EXE, Src2_EXE, IS_IMM_H);
+						Src1_ID, Src2_ID, Src1_EXE, Src2_EXE, IS_IMM_H, IS_IMM_EXE , Forward_Dest_EN_in, Forward_Dest_EN);
 	input clk , rst ;
 
 	input Flush;
@@ -123,7 +123,7 @@ module ID_Stage_reg(clk, rst, PC_in, PC , Flush , MEM_R_EN_in , MEM_W_EN_in , WB
 	input [1:0] Br_type_in ; 
 	//hazard
 	input [4:0] Src1_ID, Src2_ID;
-	input IS_IMM_H;
+	input IS_IMM_H, Forward_Dest_EN_in;
 	//hazard
 
 	output reg [31:0] PC;
@@ -137,6 +137,7 @@ module ID_Stage_reg(clk, rst, PC_in, PC , Flush , MEM_R_EN_in , MEM_W_EN_in , WB
 	output reg [1:0] Br_type ;
 	//hazard
 	output reg [4:0] Src1_EXE, Src2_EXE;
+	output reg Forward_Dest_EN, IS_IMM_EXE;
 	//hazard
 
 
@@ -158,6 +159,8 @@ module ID_Stage_reg(clk, rst, PC_in, PC , Flush , MEM_R_EN_in , MEM_W_EN_in , WB
 			//hazard
 			Src1_EXE <= 5'b0;
 		  	Src2_EXE <= 5'b0;
+		  	Forward_Dest_EN <= 1'b0;
+		  	IS_IMM_EXE <= 1'b0;
 		  	//hazard
 		end
 		else 
@@ -174,19 +177,21 @@ module ID_Stage_reg(clk, rst, PC_in, PC , Flush , MEM_R_EN_in , MEM_W_EN_in , WB
 			Br_type <= Br_type_in;
 			//hazard
 			Src1_EXE <= Src1_ID;
-		    Src2_EXE <= (IS_IMM_H) ? 5'b0 : Src2_ID;
+		  Src2_EXE <= (IS_IMM_H) ? 5'b0 : Src2_ID;
+		  Forward_Dest_EN <= Forward_Dest_EN_in;
+		  IS_IMM_EXE <= IS_IMM_H;
 		    //hazard
 		end
 	end
 	
 endmodule
 
-module EXE_Stage(clk, rst, PC , EXE_CMD , Val1 ,Val2 , Val_src2 , Br_type , ALU_result , Br_Addr , Br_taken);
+module EXE_Stage(clk, rst, PC , EXE_CMD , Val1 ,Val2, Val2_IMM , Val_src2 , Br_type , ALU_result , Br_Addr , Br_taken);
 	input clk , rst ;
 	input [31:0] PC;
 	input [3:0] EXE_CMD;
 	input [31:0] Val1;
-	input [31:0] Val2;
+	input [31:0] Val2,  Val2_IMM;
 	input [31:0] Val_src2;
 	input [1:0] Br_type;
 
@@ -194,7 +199,7 @@ module EXE_Stage(clk, rst, PC , EXE_CMD , Val1 ,Val2 , Val_src2 , Br_type , ALU_
 	output [31:0] Br_Addr;
 	output reg Br_taken;
 
-	assign Br_Addr = PC + (Val2<<2);
+	assign Br_Addr = PC + (Val2_IMM<<2);
 	
 	always @(*) 
 	begin 

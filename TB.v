@@ -8,7 +8,7 @@ reg	  [17:0]	SW=18'b0;
 MIPS T1(.CLOCK_50(CLOCK_50), .SW(SW));
 
 
-initial repeat(10000) 
+initial repeat(5000) 
 begin 
   CLOCK_50 = ~CLOCK_50;  
   #20; 
@@ -16,7 +16,7 @@ begin
  
  initial begin
    SW[17] =0;
-   SW[3] = 0;
+   SW[3] = 1;
    #10;
    SW[17] =  1;
    #100;

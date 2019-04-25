@@ -13,19 +13,24 @@ wire [4:0]in2;
 assign in2 = (Forward_Dest_EN == 1'b1 ) ? Dest_EXE : Src2_EXE;
 
 
-assign Forward_Val1= (EN == 0) ? 0 :
-					 (WB_EN_MEM && (Dest_MEM == Src1_EXE)) ? 2 : 
-                     (WB_EN_WB && (Dest_WB == Src1_EXE)) ? 1 :  0;
+assign Forward_Val1= (EN == 0) ? 2'b0 :
+					           (WB_EN_MEM && (Dest_MEM == Src1_EXE)) ? 2'b10 : 
+                     (WB_EN_WB  && (Dest_WB  == Src1_EXE)) ? 2'b01 :  2'b0;
                     
-assign Forward_Val2= (EN == 0) ? 0 :
-					 (WB_EN_MEM && (Dest_MEM == in2)) ? 2 : 
-                     (WB_EN_WB && (Dest_WB == in2)) ? 1 :  0;                
+assign Forward_Val2= (EN == 0) ? 2'b0 :
+					           (WB_EN_MEM && (Dest_MEM == in2)) ? 2'b10 : 
+                     (WB_EN_WB && (Dest_WB == in2)) ? 2'b01 : 2'b0;                
 
 
 endmodule
 
 module Forwarding_MUX(input [31:0]Val,Result_WB,ALU_result_MEM,input [1:0]Forward_Val,output [31:0]O);
   assign O=(Forward_Val==0)?Val:((Forward_Val==1)?Result_WB:((Forward_Val==2)?ALU_result_MEM:32'bz));
+
+endmodule
+
+module IMM_MUX(input [31:0]Val2_Forwarded, Val2, input IS_IMM,output [31:0]O);
+  assign O=(IS_IMM==0)?Val2_Forwarded:Val2;
 
 endmodule
 
@@ -41,16 +46,19 @@ output reg Hazard_Detected_Sig;
 always @(*)
 begin
 	if  (EN == 1'b1)
-		if ( ( MEM_R_EN == 1'b1 && ( (Src1 == EXE_Dest) || (Src2 == EXE_Dest) )) == 1'b1)
-			Hazard_Detected_Sig = 1'b1;
-		else 
-			Hazard_Detected_Sig = 1'b0;
+	  begin
+		  if ( ( MEM_R_EN == 1'b1 && ( (Src1 == EXE_Dest) || (Src2 == EXE_Dest) )) == 1'b1)
+		  	Hazard_Detected_Sig = 1'b1;
+		  else 
+		  	Hazard_Detected_Sig = 1'b0;
+		end
 	else 
-		if ((( EXE_WB_EN == 1'b1 && ( (Src1 == EXE_Dest) || (Src2 == EXE_Dest) )) || ( MEM_WB_EN == 1'b1 && ( (Src1 == MEM_Dest) || (Src2 == MEM_Dest) ))) == 1'b1)
-			Hazard_Detected_Sig = 1'b1;
-		else 
-			Hazard_Detected_Sig = 1'b0;
-
+	  begin
+		  if ((( EXE_WB_EN == 1'b1 && ( (Src1 == EXE_Dest) || (Src2 == EXE_Dest) )) || ( MEM_WB_EN == 1'b1 && ( (Src1 == MEM_Dest) || (Src2 == MEM_Dest) ))) == 1'b1)
+			 Hazard_Detected_Sig = 1'b1;
+		  else 
+			 Hazard_Detected_Sig = 1'b0;
+	  end
 
 end
 assign Freeze = Hazard_Detected_Sig;

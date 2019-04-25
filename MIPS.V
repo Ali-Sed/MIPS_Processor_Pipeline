@@ -341,13 +341,14 @@ wire WB_EN_WB, MEM_R_EN_WB;
 //hazard
 wire [4:0] Src2_EXE, Src1_EXE;
 wire [1:0] Forward_Val1, Forward_Val2;
-wire [31:0] Val1_EXE_Forwarded,Val2_EXE_Forwarded;
+wire [31:0] Val1_EXE_Forwarded,Val2_EXE_Forwarded, Reg2_EXE_Forwarded, Val2_EXE_Forwarded2;
 wire Hazard_Detected_Sig, WB_EN_ID_H , MEM_R_EN_ID_H , MEM_W_EN_ID_H;
 wire [3:0] EXE_CMD_ID_H ;
 wire [1:0] Br_type_ID_H;
 wire Freeze;
-wire Forward_Dest_EN;
-wire IS_IMM_H;
+wire Forward_Dest_EN_ID, Forward_Dest_EN_EXE;
+wire IS_IMM_H, IS_IMM_EXE;
+
 //hazard
 wire MEM_R_EN_EXE , MEM_W_EN_EXE , WB_EN_EXE ;  
 
@@ -357,18 +358,19 @@ IF_Stage_reg IF_reg_1 (.clk(CLOCK_50), .rst(SW[17]), .PC_in(PC_IFF), .Flush(Br_t
 
 // WB_DATA and WB_Write_EN are not connected
 ID_Stage ID_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_ID), .PC(PC_IDD) , .Instruction(Inst_ID ) ,.WB_Write_Enable(WB_EN), .WB_Data(Write_value), .Dest (Dest_ID) , .Val1 (Val1_ID) , .Val2 (Val2_ID) , .Reg2(Reg2_ID)  , .WB_Dest(WB_DEST)  
-	, .EXE_CMD (EXE_CMD_ID), .MEM_W_EN(MEM_W_EN_ID) , .MEM_R_EN( MEM_R_EN_ID) , .WB_EN(WB_EN_ID), .Br_type(Br_type_ID) , .Forward_Dest_EN(Forward_Dest_EN) , .IS_IMM_H(IS_IMM_H));
+	, .EXE_CMD (EXE_CMD_ID), .MEM_W_EN(MEM_W_EN_ID) , .MEM_R_EN( MEM_R_EN_ID) , .WB_EN(WB_EN_ID), .Br_type(Br_type_ID) , .Forward_Dest_EN(Forward_Dest_EN_ID) , .IS_IMM_H(IS_IMM_H));
 
 ID_Stage_reg ID_reg_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_IDD), .PC(PC_EXE) , .Flush(Br_taken)  , .MEM_R_EN_in(MEM_R_EN_ID_H) , .MEM_W_EN_in(MEM_W_EN_ID_H) , .WB_EN_in(WB_EN_ID_H),
 						.EXE_CMD_in(EXE_CMD_ID_H) , .Dest_in(Dest_ID) , .Reg2_in(Reg2_ID) , .Val1_in(Val1_ID) , .Val2_in(Val2_ID),
 						.Dest(Dest_EXE) , .Val1(Val1_EXE) , .Val2(Val2_EXE) , .Reg2(Reg2_EXE) , .MEM_R_EN(MEM_R_EN_EXE) , 
 						.MEM_W_EN(MEM_W_EN_EXE) , .EXE_CMD(EXE_CMD_EXE) , .WB_EN(WB_EN_EXE), .Br_type(Br_type_EXE) , .Br_type_in (Br_type_ID_H),
-						.Src1_ID(Inst_ID[25:21]), .Src2_ID(Inst_ID[20:16]), .Src1_EXE(Src1_EXE), .Src2_EXE(Src2_EXE));
+						.Src1_ID(Inst_ID[25:21]), .Src2_ID(Inst_ID[20:16]), .Src1_EXE(Src1_EXE), .Src2_EXE(Src2_EXE), .IS_IMM_H(IS_IMM_H),
+						.Forward_Dest_EN_in(Forward_Dest_EN_ID), .Forward_Dest_EN(Forward_Dest_EN_EXE), .IS_IMM_EXE(IS_IMM_EXE));
 
 
 
-EXE_Stage EXE_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC(PC_EXE),  .EXE_CMD(EXE_CMD_EXE) , .Val1(Val1_EXE) , .Val2(Val2_EXE) , .Val_src2(Reg2_EXE) , .Br_type(Br_type_EXE) , .ALU_result(ALU_result) , .Br_Addr(Br_address) , .Br_taken(Br_taken) );
-EXE_Stage_reg EXE_reg_1(.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_EXEE), .PC(PC_MEM) ,  .Dest_in(Dest_EXE), .Dest(Dest_MEM), .WB_EN_in(WB_EN_EXE) , .MEM_R_EN_in(MEM_R_EN_EXE) , .MEM_W_EN_in(MEM_W_EN_EXE) , .ALU_result_in(ALU_result) , .ST_val_in(Reg2_EXE) , .WB_EN(WB_EN_MEM) , .MEM_R_EN(MEM_R_EN_MEM) , .MEM_W_EN(MEM_W_EN_MEM) , .ALU_result(ALU_result_MEM) , .ST_val(ST_value)  );
+EXE_Stage EXE_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC(PC_EXE),  .EXE_CMD(EXE_CMD_EXE) , .Val1(Val1_EXE_Forwarded) , .Val2(Val2_EXE_Forwarded2),  .Val2_IMM(Val2_EXE) , .Val_src2(Reg2_EXE_Forwarded) , .Br_type(Br_type_EXE) , .ALU_result(ALU_result) , .Br_Addr(Br_address) , .Br_taken(Br_taken) );
+EXE_Stage_reg EXE_reg_1(.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_EXEE), .PC(PC_MEM) ,  .Dest_in(Dest_EXE), .Dest(Dest_MEM), .WB_EN_in(WB_EN_EXE) , .MEM_R_EN_in(MEM_R_EN_EXE) , .MEM_W_EN_in(MEM_W_EN_EXE) , .ALU_result_in(ALU_result) , .ST_val_in(Reg2_EXE_Forwarded) , .WB_EN(WB_EN_MEM) , .MEM_R_EN(MEM_R_EN_MEM) , .MEM_W_EN(MEM_W_EN_MEM) , .ALU_result(ALU_result_MEM) , .ST_val(ST_value)  );
 
 
 MEM_Stage MEM_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_MEM), .PC(PC_MEMM),.MEM_W_EN_in(MEM_W_EN_MEM) , .MEM_R_EN_in(MEM_R_EN_MEM), .ALU_result_in(ALU_result_MEM) , .ST_val(ST_value) , .MEM_read_value(MEM_read));
@@ -381,11 +383,15 @@ WB_Stage WB_1 (.clk (CLOCK_50) , .rst(SW[17]), .PC_in(PC_WB), .PC(PC_WBB), .WB_E
  
 Forwarding_MUX  Forwarding_Val1(.Val(Val1_EXE),.Result_WB(Write_value),.ALU_result_MEM(ALU_result_MEM),.Forward_Val(Forward_Val1),.O(Val1_EXE_Forwarded));
 Forwarding_MUX  Forwarding_Val2(.Val(Val2_EXE),.Result_WB(Write_value),.ALU_result_MEM(ALU_result_MEM),.Forward_Val(Forward_Val2),.O(Val2_EXE_Forwarded));
+Forwarding_MUX  Forwarding_Val3(.Val(Reg2_EXE),.Result_WB(Write_value),.ALU_result_MEM(ALU_result_MEM),.Forward_Val(Forward_Val2),.O(Reg2_EXE_Forwarded));
+
+IMM_MUX IMM(.Val2_Forwarded(Val2_EXE_Forwarded), .Val2(Val2_EXE), .IS_IMM(IS_IMM_EXE),.O(Val2_EXE_Forwarded2));
  
-Forwarding_Unit FU_1(.Dest_MEM(Dest_MEM), .Dest_EXE(Dest_EXE), .Forward_Dest_EN(Forward_Dest_EN), .Dest_WB(WB_dest), .WB_EN_MEM(WB_EN_MEM), .WB_EN_WB(WB_EN_WB), .Src1_EXE(Src1_EXE), .Src2_EXE(Src2_EXE), .Forward_Val1(Forward_Val1), .Forward_Val2(Forward_Val2) , .EN(SW[3]));
+Forwarding_Unit FU_1(.Dest_MEM(Dest_MEM), .Dest_EXE(Dest_EXE), .Forward_Dest_EN(Forward_Dest_EN_EXE), .Dest_WB(WB_DEST), .WB_EN_MEM(WB_EN_MEM), .WB_EN_WB(WB_EN_WB), .Src1_EXE(Src1_EXE), .Src2_EXE(Src2_EXE), .Forward_Val1(Forward_Val1), .Forward_Val2(Forward_Val2) , .EN(SW[3]));
 Hazard_Detector HD1(.Src1(Inst_ID[25:21]) , .Src2(Inst_ID[20:16]) , .EXE_Dest(Dest_EXE) , .EXE_WB_EN(WB_EN_EXE) , .MEM_Dest(Dest_MEM) , .MEM_WB_EN(WB_EN_MEM) , .Freeze(Freeze) , .Hazard_Detected_Sig(Hazard_Detected_Sig) ,.MEM_R_EN(MEM_R_EN_EXE), .EN(SW[3]));
 
 Hazard_MUX    	HM1(.in1(WB_EN_ID) , .in2(MEM_R_EN_ID) , .in3(MEM_W_EN_ID) , .in4(Br_type_ID) , .in5(EXE_CMD_ID) , .Sel(Hazard_Detected_Sig) , .WB_EN(WB_EN_ID_H) , .MEM_R(MEM_R_EN_ID_H) , .MEM_W(MEM_W_EN_ID_H) , .BR_type(Br_type_ID_H) , .EXE_CMD(EXE_CMD_ID_H) );
+
 //end of hazard
 
 
